@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Contador de caracteres</title>
+</head>
+
+<body>
+    <h3>¡HOLA! escriba en el siguiente cuadro: </h3>
+
+    <textarea name="" id="texto" cols="30" rows="10"></textarea>
+
+    <div>
+        Caracteres: <h5 id="cuenta"></h5>
+    </div>
+
+    <script>
+        var texto= document.getElementById('texto');
+        var cuenta = document.getElementById('cuenta');
+    
+        texto.addEventListener('keyup', function(){
+            cuenta.innerText = texto.value.length;
+        })
+
+    
+
+
+    
+    
+    </script>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

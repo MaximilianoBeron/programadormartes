@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Cambio de color de fondo</title>
+</head>
+
+<body>
+    <h3>¡HOLA! para cambiar el color del fondo, haga click en uno de los cuadrados: </h3>
+
+
+    <div class="fondo">
+        <div class="cuadrado negro" onclick="cambiarcolor('black')"></div>
+        <div class="cuadrado amarillo" onclick="cambiarcolor('yellow')"></div>
+        <div class="cuadrado verde" onclick="cambiarcolor('green')"></div>
+
+    </div>
+    <button onclick="resetear()">Resetear</button>
+
+    <style>
+        .fondo {
+            display: flex;
+        }
+
+        .cuadrado {
+            height: 150px;
+            width: 150px;
+        }
+
+        .negro {
+            background-color: black;
+
+        }
+
+        .amarillo {
+            background-color: yellow;
+        }
+
+
+        .verde {
+            background-color: green;
+        }
+    </style>
+
+</body>
+
+
+
+<script>
+    function cambiarcolor(color) {
+        document.querySelector('body').style.background = color;
+        document.querySelector('h3').textContent = "¡Ha cambiado de color!";
+        document.querySelector('h3').style.color = ('red');
+    }
+
+    function resetear() {
+        document.querySelector('body').style.background = ('white')
+        document.querySelector('h3').textContent = ('¡HOLA! para cambiar el color del fondo, haga click en uno de los cuadrados:')
+        document.querySelector('h3').style.color = ('black')
+    }
+
+
+</script>
+
+</html>
