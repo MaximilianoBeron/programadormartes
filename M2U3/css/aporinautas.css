@@ -1,6 +1,7 @@
 /*font-family: 'Alfa Slab One', cursive;*/
 /*font-family: 'Architects Daughter', cursive;*/
 
+
 footer {
     background-color: rgb(116, 116, 177);
 }
@@ -36,6 +37,7 @@ h5 {
     display: block;
 }
 
+
 .proximas-fechas li a:hover {
 
     background-color: rgb(207, 207, 207);
@@ -49,18 +51,36 @@ h5 {
     opacity: 0.7;
 }
 
+
 .proximas-fechas li a:hover img {
     filter: none;
     margin-right: 1.4rem;
     opacity: 1;
 }
 
+
 .testimonios{
     background-color: rgb(207, 207, 207);
     padding-bottom: 4rem !important;
 }
 
+
 .testimonio{
     text-align: center;
     padding: 30px 30px;
+}
+
+
+.mapa iframe{
+width: 100%;
+aspect-ratio: 1.2;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll_section{ 
+scroll-margin-top: 60px;
 }
